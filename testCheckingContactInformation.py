@@ -34,7 +34,7 @@ try:
 	email = "sales@byndyusoft.com"
 	emailOnPage = browser.find_element(By.XPATH, "//div[@class='popup-callback__footer-contacts']//a[contains(@href,'mailto:sales@byndyusoft.com')]").text
 	assert emailOnPage == email, \
-            f"The phone number is not correct: '{emailOnPage}' instead of '{email}'"	
+            f"The Email is not correct: '{emailOnPage}' instead of '{email}'"	
 
 
 finally:
